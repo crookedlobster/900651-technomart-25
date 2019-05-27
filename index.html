@@ -59,6 +59,7 @@
     <main>
       <h1 class="visual-hidden">Интернет магазин «Техномарт»</h1>
       <h2> Популярные товары</h2>
+
       <section class="description-delivery">
         <h3>Компания «Техномарт»</h3>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
@@ -138,5 +139,24 @@
         </div>
       </section>
     </footer>
+    <section class="modal modal-writeus">
+      <h2 class="visual-hidden">Напишите нам</h2>
+      <span class="modal-close">x</span>
+      <form class="feedback" action="index.html" method="post">
+        <label>
+          Ваше имя:
+          <input type="text" name="username" placeholder="Имя и Фамилия" required>
+        </label>
+        <label>
+          Ваш email:
+          <input type="text" name="email" placeholder="email@example.com" required>
+        </label>
+        <label> Текст письма:
+          <textarea name="message" rows="8" cols="10" placeholder="В произвольной
+          форме"></textarea>
+        </label>
+        <input type="submit" name="submit-button" value="Отправить">
+      </form>
+    </section>
   </body>
 </html>
