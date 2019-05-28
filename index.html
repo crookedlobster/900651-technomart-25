@@ -12,9 +12,9 @@
   <body>
     <header class="main-header">
       <div class="header-bar">
-        <a href="index.html" class="button header-logo" >
+        <a href="index.html" class="button header-logo" aria-label="Техномарт">
           <img src="img/content/site-logo.png" alt="Логотип сайта" width="109"
-          height="19">Техномарт</a>
+          height="19"></a>
         <!-- <form></form> Поиск наверное делается инпутом
                 <img src="img/decoration/icon-search.png" alt="иконка поиска">-->
         <ul class="header-bar-order">
@@ -24,7 +24,7 @@
           <li>
             <a href="#"><img src="img/cart-icon" alt="Иконка корзины">Корзина</a>
           </li>
-          <li><a href="#">Оформить заказ</a></li>
+          <li><a href="#" >Оформить заказ</a></li>
         </ul>
       </div>
       <div class="header-navigation">
@@ -112,20 +112,23 @@
           <li>© 2010–2019 Компания «Техномарт»</li>
           <li>Все права защищены</li>
         </ul>
-        <ul class="autor-social"
+        <ul class="autor-social">
           <li>
-            <a href="https://vk.com" class="social-button">
-              <img src="img/decoration/vk-icon.svg" alt="Иконка VK">Вконтакте
+            <a href="https://vk.com" class="social-button" aria-button="Техномарт
+             в Вокнтакте">
+              <img src="img/decoration/vk-icon.svg" alt="Иконка VK">
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com" class="social-button">
-              <img src="img/decoration/fb-icon" alt="Иконка facebook"> Фэйсбук
+            <a href="https://www.facebook.com" class="social-button"
+            aria-label="Техномарт в Фэйсбук">
+              <img src="img/decoration/fb-icon" alt="Иконка facebook">
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com" class="social-button">
-              <img src="img/decoration/insta-icon" alt="Иконка instagram">Инстаграм
+            <a href="https://www.instagram.com" class="social-button"
+            aria-label="Техномарт в Инстаграм">
+              <img src="img/decoration/insta-icon" alt="Иконка instagram">
             </a>
           </li>
         </ul>
@@ -141,7 +144,7 @@
     </footer>
     <section class="modal modal-writeus">
       <h2 class="visual-hidden">Напишите нам</h2>
-      <span class="modal-close">x</span>
+      <button class="modal-close" aria-label="Закрыть окно">x</button>
       <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
         <label>
           Ваше имя:
