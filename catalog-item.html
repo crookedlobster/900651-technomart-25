@@ -350,12 +350,14 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a>1</a>
+          <li class="pagination-item pagination-item-current">
+            <a aria-label="страница 1">1</a>
           </li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item pagination-item-button"><a href="#">
-            Следующая</a></li>
+          <li class="pagination-item"><a href="#" aria-label="страница 2">2</a></li>
+          <li class="pagination-item"><a href="#" aria-label="страница 3">3</a></li>
+          <li class="pagination-item pagination-item-button">
+            <a href="#" aria-label="Следующая страница">Следующая</a>
+          </li>
         </ul>
       </section>
     </main>
@@ -364,7 +366,7 @@
       <section class="footer-navigation">
         <a href="index.html" class="button footer-button">
           <img src="img/content/site-logo.png" alt="Логотип сайта" width="138"
-          height="23">Техномарт
+          height="23" aria-label="Техномарт">
         </a>
         <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная,
           д. 19/8
@@ -390,17 +392,20 @@
         </ul>
         <ul class="autor-social"
           <li>
-            <a href="https://vk.com" class="social-button">
-              <img src="img/decoration/vk-icon.svg" alt="Иконка VK">Вконтакте
+            <a href="https://vk.com" class="social-button" aria-button="Техномарт
+             в Вокнтакте">
+              <img src="img/decoration/vk-icon.svg" alt="Иконка VK">
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com" class="social-button">
+            <a href="https://www.facebook.com" class="social-button"
+            aria-label="Техномарт в Фэйсбук">
               <img src="img/decoration/fb-icon" alt="Иконка facebook"> Фэйсбук
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com" class="social-button">
+            <a href="https://www.instagram.com" class="social-button"
+            aria-label="Техномарт в Инстаграм">
               <img src="img/decoration/insta-icon" alt="Иконка instagram">Инстаграм
             </a>
           </li>
@@ -418,9 +423,9 @@
     <section class="modal modal-add-item">
       <h2>Товар добавлен в корзину!</h2>
       <img src="img/decoration/modal-catalog-icon.svg" alt="иконка-галочки">
-      <span class="madal-close">x</span>
+      <button class="modal-close" aria-label="Закрыть окно добавления товара">x</button>
       <a href="#" class="button">Оформить заказ</a>
-      <a href="#" class="button">Продолжить покупки</a>
+      <button class="close-modal-window modal-button">Продолжить покупки</button>
     </section>
   </body>
 </html>
